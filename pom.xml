@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>afpa.cdi.elastique</groupId>
+	<artifactId>panier</artifactId>
+	<version>0.0.1-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>panier-parent</name>
+
+
+	<!-- =============================================================== -->
+	<!-- Properties -->
+	<!-- =============================================================== -->
+
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<maven.compiler.source>1.7</maven.compiler.source>
+		<maven.compiler.target>1.7</maven.compiler.target>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+				<groupId>afpa.cdi.elastique</groupId>
+				<artifactId>panier-commun</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>afpa.cdi.elastique</groupId>
+				<artifactId>panier-model</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>afpa.cdi.elastique</groupId>
+				<artifactId>panier-dao</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			<dependency>
+				<groupId>afpa.cdi.elastique</groupId>
+				<artifactId>panier-buisness</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>			
+			<dependency>
+				<groupId>afpa.cdi.elastique</groupId>
+				<artifactId>panier-webapp</artifactId>
+				<version>0.0.1-SNAPSHOT</version>
+			</dependency>
+			
+		</dependencies>
+	</dependencyManagement>
+	<!-- =============================================================== -->
+	<!-- Modules -->
+	<!-- =============================================================== -->
+
+	<modules>
+		<module>panier-webapp</module>
+		<module>panier-commun</module>
+
+		<module>panier-dao</module>
+		<module>panier-model</module>
+		<module>panier-buisness</module>
+	</modules>
+</project>
