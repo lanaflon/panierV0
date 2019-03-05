@@ -1,0 +1,8 @@
+select * from panier2019.catalogue  cat 
+inner JOIN panier2019.produit
+on cat.id_produit in 
+(SELECT  pr.id_produit FROM panier2019.produit pr
+WHERE pr.id_fabricant_produit in(1,2,3,4,5) 
+and pr.id_famille_produit in(1,2,3,4) 
+and pr.id_ssfamille_produit in(1,2,3,4)) 
+and cat.id_couleur in (1,2)
