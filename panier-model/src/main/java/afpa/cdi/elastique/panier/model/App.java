@@ -1,4 +1,4 @@
-package afpa.cdi.elastique.panier.commun;
+package afpa.cdi.elastique.panier.model;
 
 /**
  * Hello world!
