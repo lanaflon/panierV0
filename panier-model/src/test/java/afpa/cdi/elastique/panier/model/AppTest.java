@@ -1,4 +1,4 @@
-package afpa.cdi.elastique.panier.commun;
+package afpa.cdi.elastique.panier.model;
 
 import static org.junit.Assert.assertTrue;
 
